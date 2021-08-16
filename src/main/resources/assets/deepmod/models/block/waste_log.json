@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "deepmod:block/waste_log",
+    "side": "deepmod:block/waste_log"
+  }
+}
