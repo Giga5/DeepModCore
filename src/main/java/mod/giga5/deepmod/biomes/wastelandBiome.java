@@ -1,13 +1,11 @@
 package mod.giga5.deepmod.biomes;
 
-import mod.giga5.deepmod.holder;
 import mod.giga5.deepmod.structures.wastelandsurface;
-import mod.giga5.deepmod.structures.wastetree;
+import mod.giga5.deepmod.structures.featuregen;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.carver.ConfiguredCarver;
 import net.minecraft.world.gen.carver.ConfiguredCarvers;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
@@ -32,7 +30,7 @@ public class wastelandBiome {
                 .addStructureStart(StructureFeatures.MINESHAFT)
                 .addStructureStart(StructureFeatures.STRONGHOLD)
                 .addFeature(GenerationStage.Decoration.LAKES, Features.LAKE_LAVA)
-                        .addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, wastetree.tree_waste)
+                        .addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, featuregen.waste_tree_spread_config)
                         .addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Features.BIRCH)
                 .build();
 
